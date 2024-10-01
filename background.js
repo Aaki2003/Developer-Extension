@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         const query = request.query;
 
         // Example API request (Replace with your actual data source)
-        fetch(`https://www.googleapis.com/customsearch/v1?q=${encodeURIComponent(query)}&key=AIzaSyAL_hDYlApA_hPRqJpQ15rLUNuSGF_3EJg&cx=476aaea86c55945b1`)
+        fetch(`https://www.googleapis.com/customsearch/v1?q=${encodeURIComponent(query)}&key=Apikey`)
             .then(response => response.json())
             .then(data => {
                 sendResponse({ result: data });

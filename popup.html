@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Resources</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; }
+        #result { margin-top: 20px; 
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        ul { padding-left: 20px; }
+        a { text-decoration: none; color: #007bff; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h2>Find Project Resources</h2>
+    <form id="queryForm">
+        <input type="text" id="query" placeholder="Enter project name" required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="result" ></div>
+    <script src="popup.js"></script>
+</body>
+</html>

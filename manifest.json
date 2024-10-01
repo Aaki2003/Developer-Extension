@@ -1,0 +1,31 @@
+{
+    "name": "Project Resource Suggester",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "A Chrome extension that suggests links, files, and folders required for a project.",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "logo.jpg",
+            "48": "logo64.png",
+            "128": "logo128.png"
+        }
+    },
+    "icons": {
+        "16": "logo.jpg",
+        "48": "logo64.png",
+        "128": "logo128.png"
+    }
+}
